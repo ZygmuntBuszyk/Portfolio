@@ -166,4 +166,7 @@ div.bonfire-slideout-content p:nth-of-type(1)::after {
   .contact :first-child {
     color: white;
   }
+  .contact {
+    font-size: 1em;
+  }
 }
