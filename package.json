@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Portfolio site",
   "main": "app.js",
-  "homepage": "https://zygmuntbuszyk.github.io/Bakery",
+  "homepage": "https://zygmuntbuszyk.github.io/Portfolio",
   "dependencies": {
     "css-loader": "^1.0.0",
     "gh-pages": "^2.0.0",
