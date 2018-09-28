@@ -149,11 +149,21 @@ div.bonfire-slideout-content p:nth-of-type(1)::after {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #ff8000;
+  width: 100%;
+  font-size: 2em;
 }
 .contact :first-child {
   padding: 0 20px;
+  color: #ff8000;
 }
 .contact a:hover svg path {
   fill: red;
+}
+@media (max-width: 900px) {
+  .contact {
+    background: #ff8000;
+  }
+  .contact :first-child {
+    color: white;
+  }
 }

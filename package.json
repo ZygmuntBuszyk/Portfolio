@@ -7,7 +7,7 @@
   "scripts": {
     "start": "webpack-dev-server --entry ./src/js/app.js --output-filename ./dist/bundle.js",
     "build": "webpack",
-    "deploy": "npm run build&&gh-pages -d build"
+    "deploy": "npm run build&&gh-pages -d "
   },
   "dependencies": {
     "css-loader": "^1.0.0",
@@ -17,6 +17,7 @@
     "webpack-dev-server": "^3.1.8"
   },
   "devDependencies": {
+    "gh-pages": "^2.0.0",
     "css-loader": "^1.0.0",
     "style-loader": "^0.23.0",
     "url-loader": "^1.1.1",
