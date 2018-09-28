@@ -4,6 +4,11 @@
   "description": "Portfolio site",
   "main": "app.js",
   "homepage": "https://zygmuntbuszyk.github.io/Portfolio",
+  "scripts": {
+    "start": "webpack-dev-server --entry ./src/js/app.js --output-filename ./dist/bundle.js",
+    "build": "webpack",
+    "deploy": "npm run build&&gh-pages -d build"
+  },
   "dependencies": {
     "css-loader": "^1.0.0",
     "gh-pages": "^2.0.0",
@@ -17,11 +22,6 @@
     "url-loader": "^1.1.1",
     "webpack": "^4.19.1",
     "webpack-cli": "^3.1.0"
-  },
-  "scripts": {
-    "start": "webpack-dev-server --entry ./src/js/app.js --output-filename ./dist/bundle.js",
-    "build": "webpack",
-    "deploy": "npm run build&&gh-pages -d build"
   },
   "author": "zygmunt buszyk",
   "license": "ISC"
