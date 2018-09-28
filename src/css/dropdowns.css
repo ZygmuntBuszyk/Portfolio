@@ -1,0 +1,159 @@
+.About-button {
+  cursor: pointer;
+}
+
+.bonfire-slideout-content {
+  background: black;
+}
+h1 {
+  color: white;
+}
+.bonfire-slideout {
+  position: fixed;
+  z-index: 100;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+  transition: transform 0.8s ease, left 0s ease;
+  background: black;
+}
+.bonfire-slideout-inner {
+  max-width: 100%;
+  max-height: 100%;
+  overflow: auto;
+  overflow-x: hidden;
+}
+.bonfire-slideout-inner-inner {
+  padding: 10%;
+}
+.bonfire-slideout-active {
+  opacity: 0.99 !important;
+  left: 0 !important;
+}
+.bonfire-slideout-active-translate {
+  transform: translateY(0);
+}
+
+.bonfire-slideout-content {
+  max-width: 920px;
+  text-align: center;
+  margin: 6em auto 0 auto;
+  padding: 0;
+  font-size: 22px;
+  line-height: 30px;
+  color: #ccc;
+}
+.bonfire-slideout-content h3 {
+  position: relative;
+  display: inline-block;
+  /* margin: 0 auto;
+  padding: 0; */
+}
+.bonfire-slideout-content h3::before,
+.bonfire-slideout-content h3::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  height: 0.5px;
+  width: 300px;
+  background-color: white;
+}
+.bonfire-slideout-content h3::before {
+  left: 150px;
+}
+.bonfire-slideout-content h3::after {
+  right: 150px;
+}
+
+.bonfire-slideout-close {
+  color: white;
+  cursor: pointer;
+}
+.bonfire-slideout-close:hover {
+  opacity: 0.5;
+}
+.bonfire-slideout-close {
+  /* background-color: red; */
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  /* margin: 20px 40px 0 0; */
+  /* padding: 20px;
+  width: 36px;
+  height: 36px; */
+  transition: all 0.25s ease;
+
+  /* 	background:url(images/close.png) no-repeat center center; */
+
+  color: white;
+  /*    z-index:1; */
+}
+.bonfire-slideout-close .X {
+  display: none;
+}
+.esc {
+  margin: 20px;
+}
+@media screen and (max-width: 1024px) {
+  .bonfire-slideout-close .esc {
+    display: none;
+  }
+  /* .bonfire-slideout-close .X {
+    display: block;
+    font-size: 3em;
+    margin: 20px;
+  } */
+}
+span {
+  color: #ff7f00;
+}
+div.bonfire-slideout-content p:nth-of-type(1) {
+  position: relative;
+  display: inline;
+}
+div.bonfire-slideout-content p:nth-of-type(1)::before,
+div.bonfire-slideout-content p:nth-of-type(1)::after {
+  position: absolute;
+  content: '';
+  top: 100%;
+  background: #ff7f00;
+}
+div.bonfire-slideout-content p:nth-of-type(1)::before {
+  left: 0;
+  width: 100%;
+  height: 1px;
+}
+div.bonfire-slideout-content p:nth-of-type(1)::after {
+  right: 0;
+  height: 1px;
+  width: 20px;
+}
+
+/* My Skills */
+.ends i {
+  font-size: 2em;
+  padding: 10px;
+}
+
+.ahref {
+  text-decoration: none;
+  color: #ff7f00;
+}
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ff8000;
+}
+.contact :first-child {
+  padding: 0 20px;
+}
+.contact a:hover svg path {
+  fill: red;
+}
