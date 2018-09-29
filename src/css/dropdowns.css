@@ -150,7 +150,7 @@ div.bonfire-slideout-content p:nth-of-type(1)::after {
   justify-content: center;
   align-items: center;
   width: 100%;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 .contact :first-child {
   padding: 0 20px;
